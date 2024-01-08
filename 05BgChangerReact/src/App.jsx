@@ -1,11 +1,27 @@
 import { useState } from "react";
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
+
+/**
+ * 
+ * Basic expectation from this code:
+ * As soon as user clicks on any colored button the background color is changed to 
+ * that mentioned on the button
+ * 
+ * useState cha use kelay to keep track of color
+ * jyaveli pn user button varti click karel tyaveli state change honar and color badalnar
+ * 
+ * 
+ * 
+ */
+
 import "./App.css";
 
 function App() {
   const [color, setColor] = useState("teal");
 
+  //jr onClick madhe function call karycha asel with parameters tr onClick madhe arrow function lihine and 
+  //then tikadun call karne function ...
   let handleBlack = (c) => {
     document.getElementById("txt").style.color = "white";
     setColor(c);    
