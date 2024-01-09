@@ -1,4 +1,15 @@
 /* eslint-disable no-unused-vars */
+
+/* 
+  State variables cha setup kela 
+
+  Props set kele and Event handlers define karun takle 
+
+  App.jsx madhli own functionality lihili:
+  1. swap 
+  2. convert button chi ek functionality
+
+*/
 import { useState } from "react";
 import UseCurrencyInfo from './hooks/UseCurrencyInfo';
 import { InputBox } from "./components";
@@ -18,9 +29,12 @@ function App() {
   const [to , setTo] =useState("inr");
   const [convertedAmount, setConvertedAmount] = useState(0);
 
-  const CurrInfo = UseCurrencyInfo(from);
+  let CurrInfo = UseCurrencyInfo(from); // used our own custom hook to take exchange rates
+  //from change zala ki automatically call back lagnar ani from chya navin currency che exchange rates 
+  // lagnar
   const currencyOptions = Object.keys(CurrInfo);
 
+  // swap button chi functionality
   let swap = () => {
 
     setFrom(to);
@@ -30,6 +44,7 @@ function App() {
 
   }
 
+  // convert button chi functionality
   let convert = () => {
     setConvertedAmount(CurrInfo[to] * amount);
   }
