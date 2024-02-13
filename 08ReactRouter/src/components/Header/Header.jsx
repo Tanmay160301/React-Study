@@ -37,6 +37,12 @@ export default function Header() {
                 >
                     Contact Us
                 </NavLink>
+                <NavLink 
+                to='/githubstatic'
+                className={ ({isActive}) => `${isActive? "text-orange-600" : "text-gray-600"}` }
+                >
+                    My GitHub
+                </NavLink>
                 
                 </div>
                
