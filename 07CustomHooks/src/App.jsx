@@ -32,6 +32,7 @@ function App() {
   let CurrInfo = UseCurrencyInfo(from); // used our own custom hook to take exchange rates
   //from change zala ki automatically call back lagnar ani from chya navin currency che exchange rates 
   // lagnar
+  // jasa from change zala tasa CurrInfo change honar
   const currencyOptions = Object.keys(CurrInfo);
 
   // swap button chi functionality
