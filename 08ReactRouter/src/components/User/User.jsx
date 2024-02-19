@@ -2,7 +2,8 @@ import {useParams} from "react-router-dom";
 
 export default function User() {
     
-    const {userId} = useParams()
+    const {userId} = useParams() //useParams cha use hotoy...Route chya ithe :xyz is dynamic part
+    //which we can take via useParams()
 
     return (
         <>
