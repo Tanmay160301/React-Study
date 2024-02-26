@@ -20,7 +20,7 @@ import { createContext,useContext } from "react";
 // Here we will assume ki ek default object asnar ahe
 const theme = createContext({
     themeMode: "light",
-    darkTheme: () => {},
+    darkTheme: () => {},// hela apn parent madhe define karnar
     lightTheme: () => {}
 });
 
