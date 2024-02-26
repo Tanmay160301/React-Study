@@ -6,7 +6,7 @@ import { UserContext, useUserContext } from '../context/UserContext'
 //Child component ahe
 export default function Login() {
 
-
+    //These are child components which are consuming the context
     const {Username, Password , setUsername, setPassword} = useContext(UserContext);
 
     const handleEvent = (e) => {

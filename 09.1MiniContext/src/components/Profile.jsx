@@ -4,6 +4,7 @@ import { useUserContext } from '../context/UserContext'
 
 
 export default function Profile() {
+        //These are child components which are consuming the context
     const {Username, Password} =useUserContext();
     
 
