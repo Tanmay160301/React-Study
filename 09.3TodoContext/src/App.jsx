@@ -17,6 +17,7 @@ function App() {
   const [Todos, setTodos] = useState([]);
   
   //ithe context api chya functionalities lihinar or define karnar
+  // Ithe observe kar ki while updating the state ... we need our previous state as well or else apla purna statech overwrite hoil
   const addTodo = (newMsg) => {
     setTodos((prevTodo) => [...prevTodo, {id:Date.now() , ...newMsg} ])
     // localStorage.setItem("Todos", JSON.stringify(Todos));

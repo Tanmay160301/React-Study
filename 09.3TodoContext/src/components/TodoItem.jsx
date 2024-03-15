@@ -5,7 +5,7 @@ import { useTodoContext } from "../context/Todocontext";
 function TodoItem({todo}) {
 
 
-    //useCOntext cha use kelay to use the functionality in our code
+    //useContext cha use kelay to use the functionality in our code
      const {updateTodo,deleteTodo,changeStatusOfTodo} = useTodoContext();
     const [isTodoEditable, setIsTodoEditable] = useState(false); // for 2 html components to communicate 
     //with each other ... input tag and edit cha button ... Observe the flow 

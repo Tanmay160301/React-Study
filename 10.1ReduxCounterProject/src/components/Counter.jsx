@@ -7,9 +7,9 @@ export default function Counter() {
 
     /**
      * Our react components are communicating with the redux store via 
-     * useSelectors or useDispatch
-     * useSelector cha use karun aplyala current value access karta yete
-     * useDispatch cha use karun store madhli value update karta yete
+     * useSelectors or useDispatch... These hooks are available from react-redux package/module
+     * useSelector cha use karun aplyala state chi current value access karta yete
+     * useDispatch cha use karun store madhlya state chi value update karta yete
      * 
      */
     const counter = useSelector((state) => state.counter.value)//ithe counter je aahe te store madhun aalay
@@ -23,7 +23,7 @@ export default function Counter() {
        <h2>{counter}</h2> 
        <button onClick={() => dispatch(decrement())}>Decrement</button>
        <button onClick={() => dispatch(incrementByValue(10))}>Increment By Value 10</button>
-       <button onClick={() => dispatch(incrementAsync(100))}>Asynchronous Increment by 10</button>
+       <button onClick={() => dispatch(incrementAsync(100))}>Asynchronous Increment by 100</button>
         </>
     )
 }

@@ -1,13 +1,13 @@
 /* eslint-disable no-unused-vars */
-import React, { useContext } from 'react'
+import React from 'react'
 import { useState } from 'react'
-import { UserContext, useUserContext } from '../context/UserContext'
+import { useUserContext } from '../context/UserContext'
 
 //Child component ahe
 export default function Login() {
 
     //These are child components which are consuming the context
-    const {Username, Password , setUsername, setPassword} = useContext(UserContext);
+    const {Username, Password , setUsername, setPassword} = useUserContext();
 
     const handleEvent = (e) => {
         e.preventDefault();
